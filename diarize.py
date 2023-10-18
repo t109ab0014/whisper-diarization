@@ -10,7 +10,7 @@ from deepmultilingualpunctuation import PunctuationModel
 import re
 import logging
 
-mtypes = {"cpu": "int8", "cuda": "float16"}
+mtypes = {"cpu": "int8", "cuda": "int8"}
 
 # Initialize parser
 parser = argparse.ArgumentParser()
@@ -77,7 +77,7 @@ whisper_model = WhisperModel(
 )
 
 # or run on GPU with INT8
-model = WhisperModel(model_size, device="cuda", compute_type="int8_float16")
+# model = WhisperModel(model_size, device="cuda", compute_type="int8_float16")
 # or run on CPU with INT8
 # model = WhisperModel(model_size, device="cpu", compute_type="int8")
 
