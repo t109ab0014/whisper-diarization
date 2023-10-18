@@ -10,7 +10,7 @@ from deepmultilingualpunctuation import PunctuationModel
 import re
 import logging
 
-mtypes = {"cpu": "int8", "cuda": "int8"}
+mtypes = {"cpu": "int8", "cuda": "FP32"}
 
 # Initialize parser
 parser = argparse.ArgumentParser()
